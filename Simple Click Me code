@@ -1,0 +1,72 @@
+package com.example.myapplication
+
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import com.example.myapplication.ui.theme.MyApplicationTheme
+
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            MyApplicationTheme {
+                var count = remember { mutableStateOf(0) } // ✅ Fixed syntax: `value 0` → `0`
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding -> // ✅ Fixed `Modiferr` typo
+                    Column(
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .padding(innerPadding),
+                        horizontalAlignment = Alignment.CenterHorizontally, // ✅ Fixed `Alginment` typo
+                        verticalArrangement = Arrangement.Center
+                    ) {
+                        Text(
+                            text = count.value.toString(),
+                            fontSize = 36.sp, // ✅ Fixed `fonySize` typo
+                            modifier = Modifier
+                        )
+                        Button(
+                            onClick = {
+                                count.value += 1
+                                println("=== ${count.value}")
+                            },
+                            shape = RoundedCornerShape(2.dp), // ✅ Fixed `2f` to `2.dp`
+                            modifier = Modifier
+                                .padding(12.dp)
+                                .background(Color.Gray) // ✅ Fixed `Color.Grey` (should be `Gray`)
+                        ) {
+                            Text(
+                                text = "Click Me!!",
+                                fontSize = 24.sp, // ✅ Fixed `font Size` typo
+                            )
+                        }
+                    }
+                }
+                // A surface container using the 'background' color from the theme
+                Greeting("World")
+            }
+        }
+    }
+}
+
+@Composable
+fun Greeting(name: String, modifier: Modifier = Modifier) {
+}
+
+@Preview(showBackground = true)
+@Composable
+fun GreetingPreview() {
+    MyApplicationTheme {
+        Greeting("Android")
+    }
+}
