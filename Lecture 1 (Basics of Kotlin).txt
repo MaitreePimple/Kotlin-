@@ -1,0 +1,62 @@
+Lecture 1 (Basics of Kotlin)
+modifier 
+- static object
+- companion object 
+weight = bold 
+
+emulator = mimic software and hardware for testing 
+simulator = mimic software for testing
+
+kotlin inference 
+Kotlin basic
+
+-------------------------------------------
+
+Basics 1
+Kotlin
+- is a modern and trending language 
+- its easy to learn (already knowledge of java)
+- used to develop android apps, server side apps and more..
+
+Example 
+fun main() {
+    println("Hello World") #Hello World
+}
+fun = keyword to declare a function .. it declares (main() function) here
+main() = its available in every kotlin program. this function is used to execute the code so, basically main() in this code will be there and {} will execute the code
+
+##MAIN PARAMETERS
+before 1.3 version of kotlin we needed to use main parameter 
+Example : 
+fun main(args : Array<String>) {
+    println("Hello World") #Hello World
+} 
+Note : This is no longer required ... in programming 
+-------------------------------------------
+##OUTPUT (Print)
+- println() function is used to give output values or can be said to print text
+Example :
+fun main(args : Array<String>) {
+    println("Hello World") 
+    println("Myself Maitree!!")
+    println("Beginner in Kotlin")
+    println("Its Easy to understand")
+}
+- we can also perform the mathematical operation
+Example:
+fun main () {
+    //println(3+3) 6
+    //println(8-4) 4
+    //println(4*8) 32
+    //println(10/5) 2
+}
+-------------------------------------------
+##COMMENTS
+- There are 2 type of Comments (Single-line and Multi-line comments)
+[Single-line comments are denoted = //]
+[Multi-line comments are denoted = /* ... */]
+example 
+ /* The code below will print the words Hello World
+to the screen, and it is amazing */
+println("Hello World")  // This is a comment
+
