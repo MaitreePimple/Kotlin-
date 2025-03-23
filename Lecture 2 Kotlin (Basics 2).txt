@@ -1,0 +1,100 @@
+Lecture 2 Kotlin (Basics 2)
+##VARIABLES
+- They are containers  for storing data values. var, val is used to create and "=" is used to assign them 
+Syntax : 
+var name = value (can be changed / modified)
+val name = value  (cannot be changed)
+
+Example : 
+fun main()
+{
+    var name = "Maitree"
+    val rollno = 12
+
+    println(name) // Maitree
+    println(rollno) // 12
+}
+- here if we do like this 
+   val rollno = 10
+    rollno = 12
+    println(rollno)// Error will occur because val cannot be changed 
+- where else 
+   var name =  "Maitree"
+    name = "Sans"
+    println(name) // Sans
+- val is used when variable value is fix in code like Pi value 
+--------------------------------------------------
+VARIABLE TYPE
+-Like other languages we don't need any variables declared means any specific type declared
+example like above no specific variable type.
+- in this we can specify the variable type 
+Example : 
+fun main()
+{
+    var name: String
+    name = "Maitree"
+    println(name) // Maitree
+
+    val rollno:Int
+    rollno = 12
+    println(rollno)// 12
+}
+--------------------------------------------------
+DISPLAY VARIABLES 
+- Usually println() is used to display variables 
+- But to combine both text and variable "+" is used 
+- Example :
+fun main() {
+    val firstname = "Maitree"
+    val lastname = "Doe"
+    val fullname = firstname+lastname
+    println("Hello" + fullname)  // HelloMaitreeDoe
+} 
+- For numerical values , + work has addition (mathematical operator)
+-example:
+fun main(){
+    val x = 10
+    val y = 30
+    println (x+y) //40
+}
+--------------------------------------------------
+VARIABLE NAMES
+- variable name can be short(x and y) and descriptive(age , sum) name.
+- Names should contain letters, digit, underscores and dollar sign 
+- no space in between them and it should start with letters (lowecase)
+- Reserved words (var , val , String) cannot be used.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

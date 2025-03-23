@@ -1,0 +1,20 @@
+fun main()
+{
+    var name: String
+    name = "Maitree"
+    println(name)
+    val rollno:Int
+    rollno = 12
+    println(rollno)
+}
+fun main() {
+    val firstname = "Maitree"
+    val lastname = "Doe"
+    val fullname = firstname+lastname
+    println("Hello" + fullname)  // HelloMaitreeDoe
+}
+fun main(){
+    val x = 10
+    val y = 30
+    println (x+y) //40
+}
