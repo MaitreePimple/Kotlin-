@@ -1,0 +1,10 @@
+fun main(args : Array<String>) {
+    //println("Hello World")
+    //println("Myself Maitree!!")
+    //println("Beginner in Kotlin")
+    //println("Its Easy to understand")
+    //println(3+3) 6
+    //println(8-4) 4
+    //println(4*8) 32 
+   // println(10/5) 2
+}
